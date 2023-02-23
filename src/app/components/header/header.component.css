@@ -1,0 +1,8 @@
+.headerWrapper{
+  width: 100%;
+  text-align: center;
+}
+
+.bottom{
+  border-bottom: 2px solid grey;
+}
