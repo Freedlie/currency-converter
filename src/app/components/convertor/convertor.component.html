@@ -1,0 +1,20 @@
+<div class="convertorWrapper">
+  <h2>Currency Converter</h2>
+
+  <label>From:</label>
+  <input type="number" [(ngModel)]="fromAmount" (ngModelChange)="onFormAmountChange($event)">
+  <select [(ngModel)]="fromCurrency" (ngModelChange)="onFromCurrencyChange($event)">
+    <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+  </select>
+
+  <label>To:</label>
+  <input type="number" [(ngModel)]="toAmount" (ngModelChange)="onToAmountChange($event)">
+  <select [(ngModel)]="toCurrency" (ngModelChange)="onToCurrencyChange($event)">
+    <option *ngFor="let currency of currencies" [value]="currency">{{currency}}</option>
+  </select>
+
+  <p>Conversion rate: {{rate}}</p>
+</div>
+
+
+
